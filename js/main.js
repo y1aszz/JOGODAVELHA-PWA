@@ -30,7 +30,7 @@ init();
 function newMove(e){ //criando a função newMove referente ao botão
     const index = e.target.getAttribute("data-i");//esta pegando o atributo declarado no html
     e.target.innerHTML = player; //passando para o innerHTML a informação do player
-    e.target.removeEventListener("click", newMove);
+    e.target.removeEventListener("click", newMove);//removendo o evento click do botão, para que não possa clicar duas vezes no mesmo lugar
     select[index] = player;
 
     setTimeout(() => {
