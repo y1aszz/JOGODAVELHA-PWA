@@ -52,14 +52,14 @@ function check() {
     for (pos of positions) {//percorre cada posição
         if (pos.every((item) => items.includes(item))){//verifica todos os itens e ve se ja tem um ganhador
             alert("O JOGADOR '" + playerLasMove + "' GANHOU");//se tiver um ganhador ele alerta que o ultimo player venceu 
-            init();
-            return;
+            init(); //inicializa o jogo 
+            return; //retorna
         }
     }
 
-    if (select.filter((item) => item).length === 9){
-        alert ("EMPATE");
-        init();
-        return;
+    if (select.filter((item) => item).length === 9){ // verifica se deu empate
+        alert ("EMPATE");//se tiver 9 itens selecionados ele dara um alert dizendo que deu empate
+        init();//inicializa
+        return;//retorna
     }
 }
