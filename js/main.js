@@ -46,12 +46,12 @@ function check() {
 
     const items = select
     .map((item, i) => [item, i]) //mapeia os itens selecionados
-    .filter((item) => item[0] ===playerLasMove)
-    .map((item) => item[1]);
+    .filter((item) => item[0] ===playerLasMove)//filtrando o novo aray e verificando quais itens selecionados batem com o playerLasMove
+    .map((item) => item[1]);//mapeia apenas o index
 
-    for (pos of positions) {
-        if (pos.every((item) => items.includes(item))){
-            alert("O JOGADOR '" + playerLasMove + "' GANHOU");
+    for (pos of positions) {//percorre cada posição
+        if (pos.every((item) => items.includes(item))){//verifica todos os itens e ve se ja tem um ganhador
+            alert("O JOGADOR '" + playerLasMove + "' GANHOU");//se tiver um ganhador ele alerta que o ultimo player venceu 
             init();
             return;
         }
