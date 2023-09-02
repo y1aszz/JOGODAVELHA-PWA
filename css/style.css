@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(145, 117, 170);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  text-align: center;
+}
+
+hr{
+  font-weight: bold;
+  height: 3px;
+  background: purple;
+  margin-bottom: 10px;
+  border-color: transparent;
+  
+}
+
+.velhota {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.velhota button{
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+button{
+  background-color: rgb(162, 123, 230);
+  border-color: white;
+}
+
+button:hover{
+  background-color: rgb(107, 39, 190);
+}
+
+.velhinha{
+  width: 160px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*jenjen te ama beijo
