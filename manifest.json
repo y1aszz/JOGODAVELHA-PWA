@@ -10,9 +10,9 @@
         },
 
         {
-            "src": "images/jogoVelha512.png",
+            "src": "images/iconJogo.jpg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/jpg"
         }
     ],
     "lang": "pt-BR",
