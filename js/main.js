@@ -27,9 +27,9 @@ function init(){
 
 init();
 
-function newMove(e){
-    const index = e.target.getAttribute("data-i");
-    e.target.innerHTML = player;
+function newMove(e){ //criando a função newMove referente ao botão
+    const index = e.target.getAttribute("data-i");//esta pegando o atributo declarado no html
+    e.target.innerHTML = player; //passando para o innerHTML a informação do player
     e.target.removeEventListener("click", newMove);
     select[index] = player;
 
