@@ -17,10 +17,10 @@ let positions = [ //armazena as posições possiveis para ter um ganhador
 function init(){
     select = [];//função inicial
 
-    corretPlayer.innerHTML = `Jogador da vez: ${player}`;
+    corretPlayer.innerHTML = `Jogador da vez: ${player}`; //armazena o player que o inicial é o X
 
     document.querySelectorAll(".velhota button").forEach((item) => {
-        item.innerHTML = "";
+        item.innerHTML = ""; //todo botao quando for inicializado vai começar com o innerHTML vazio
         item.addEventListener("click", newMove);
     });
 }
